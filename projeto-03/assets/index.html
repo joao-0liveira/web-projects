@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grão Escuro | Cafeteria Artesanal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ====== MENU HAMBÚRGUER ====== -->
+    <input type="checkbox" name="menu-toggle" id="menu-toggle" class="menu-toggle" aria-label="Abrir menu de navegação">
+    <label for="menu-toggle" class="menu-toggle-label" aria-label="Botão do menu"></label>
+
+
+    <!-- ====== MENU / NAVBAR ====== -->
+    <header class="menu white-bg ">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('menu-toggle').checked=false;">
+                <img src="assets/img/logo-Grão-Escuro.png" alt="Logomarca Grão Escuro" width="60">
+            </h1>
+
+            <nav class="navbar">
+                <ul onclick="getElementById('menu-toggle').checked=false;">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ====== espaçamento pra compensaar menu fixo ====== -->
+    <div class="spacing"></div>
+
+    <!-- ====== HERO ====== -->
+    <section id="inicio" class="section black-bg">
+        <div class="main-content intro-content">
+            <div class="intro-content-text">
+                <h1>Do grão à xícara, com alma.</h1>
+                <p>Cafés de origem única, preparados com método e cuidado. Venha viver a experiência Grão Escuro.</p>
+                <div class="buttons">
+                    <a href="#link-cardapio" class="btn btn-primary">Ver Cardápio →</a>
+                    <a href="#link-sobre" class="btn btn-secondary">Nossa história</a>
+                </div>
+            </div>
+            <div class="intro-video">
+                <video src="assets/videos/video-coffee.mp4" autoplay loop muted></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SOBRE ====== -->
+    <section id="sobre" class="section white-bg">
+        <div class="main-content about-content">
+            <h1>Uma xícara por vez.</h1>
+            <p>Nascemos de uma obsessão: descobrir o que um grão pode expressar quando cultivado com respeito e
+                preparado com precisão. A Grão Escuro surgiu em 2018 no coração de Minas Gerais.</p>
+            <p>Trabalhamos diretamente com produtores de alta qualidade, garantindo rastreabilidade e qualidade do campo
+                à sua mesa. Cada lote é provado e selecionado por nosso time de baristas certificados.</p>
+        </div>
+    </section>
+
+    <!-- ====== CARDÁPIO ====== -->
+    <section id="cardapio" class="section black-bg">
+        <div class="main-content sec-cardapio">
+            <h1>Nosso Cardápio</h1>
+            <p class="menu-description">Cafés preparados com precisão e dedicação.</p>
+
+            <div class="grid">
+                <article class="grid-item">
+                    <h3>Espresso Clássico</h3>
+                    <p>Extração precisa, 25ml. Corpo intenso, final achocolatado.</p>
+                    <span>R$ 7,00</span>
+                </article>
+
+                <article class="grid-item">
+                    <h3>Cappucino Artesanal</h3>
+                    <p>Espresso duplo com leite vaporizado e leve camada de espuma.</p>
+                    <span>R$ 14,00</span>
+                </article>
+
+                <article class="grid-item">
+                    <h3>Pour Over</h3>
+                    <p>Método filtrado por gotejamento. Acidez delicada, aroma floral.</p>
+                    <span>R$ 16,00</span>
+                </article>
+
+                <article class="grid-item">
+                    <h3>Cold Brew 24h</h3>
+                    <p>Infusão a frio por 24 horas. Suave, refrescante, sem amargor.</p>
+                    <span>R$ 18,00</span>
+                </article>
+
+                <article class="grid-item">
+                    <h3>Flat White</h3>
+                    <p>Espresso ristretto com microespuma sedosa. Cremoso e equilibrado.</p>
+                    <span>R$ 15,00</span>
+                </article>
+
+                <article class="grid-item">
+                    <h3>Café de origem</h3>
+                    <p>Grão selecionado do mês, método à escolha do barista.</p>
+                    <span>R$ 22,00</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== GALERIA ====== -->
+    <section id="galeria" class="section white-bg">
+        <div class="main-content grid-gallery">
+            <h1 class="gallery-heading">Galeria</h1>
+            <p class="gallery-description">Alguns dos nossos momentos favoritos.</p>
+
+            <div class="gallery">
+                <div class="gallery-img one"></div>
+
+                <div class="gallery-img two"></div>
+
+                <div class="gallery-img three"></div>
+
+                <div class="gallery-img four"> </div>
+
+                <div class="gallery-img five"></div>
+
+                <div class="gallery-img six"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ====== DEPOIMENTOS ====== -->
+    <section id="depoimentos" class="section black-bg">
+        <div class="main-content depoimentos">
+            <div class="depoimentos-heading">
+                <h1>O que dizem nossos clientes</h1>
+                <p class="menu-description">Experiências que nos motivam a melhorar cada dia.</p>
+            </div>
+            <div class="depoimentos-grid">
+                <article class="testimonial">
+                    <img src="https://i.pravatar.cc/80?img=5" alt="Foto de Ana Luíza M." class="testimonial-avatar">
+                    <blockquote>
+                        <p class="testimonial-text">"O melhor pour over que já tomei fora de São Paulo. O barista
+                            explicou cada detalhe do processo. Virei cliente fiel."</p>
+                        <footer>
+                            <cite>Ana Luíza M.</cite>
+                            <span class="rating">★★★★★</span>
+                        </footer>
+                    </blockquote>
+                </article>
+                <article class="testimonial">
+                    <img src="https://i.pravatar.cc/80?img=2" alt="Foto de Rafael S" class="testimonial-avatar">
+                    <blockquote>
+                        <p class="testimonial-text">"Ambiente aconchegante, equipe apaixonada pelo que faz. O cold brew
+                            é simplesmente viciante."</p>
+                        <footer>
+                            <cite>Rafael S.</cite>
+                            <span class="rating">★★★★★</span>
+                        </footer>
+                    </blockquote>
+                </article>
+                <article class="testimonial">
+                    <img src="https://i.pravatar.cc/80?img=9" alt="Foto de Camila T." class="testimonial-avatar">
+                    <blockquote>
+                        <p class="testimonial-text">"Finalmente um lugar que trata o café como arte. O espresso clássico
+                            é puro equilíbrio."</p>
+                        <footer>
+                            <cite>Camila T.</cite>
+                            <span class="rating">★★★★☆</span>
+                        </footer>
+                    </blockquote>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ====== CONTATOS ====== -->
+    <section id="contato" class="section white-bg">
+        <div class="main-content contact">
+            <div class="contact-heading">
+                <h1>Entre em contato</h1>
+                <p>Tem alguma dúvida, sugestão ou quer conhecer mais sobre nossos cafés? Estamos aqui para conversar.
+                </p>
+            </div>
+
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Formulário de Contato</legend>
+                    <div class="contact-grid">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="assunto">Assunto</label>
+                            <select name="assunto" id="assunto" required>
+                                <option value="#">Selecione um assunto</option>
+                                <option value="duvida">Dúvida sobre produtos</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="elogio">Elogio</option>
+                                <option value="outro">Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea name="mensagem" id="mensagem" rows="6" placeholder="Sua mensagem"
+                                required></textarea>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <button type="submit">Enviar mensagem</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <p>Feito com <span class="heart">❤</span> por a <a href="https://github.com/joao-0liveira" target="_blank">João
+                Oliveira</a> | Projeto de estudo - Abril 2026</p>
+    </footer>
+
+    <!-- ====== BOTÃO BCK TO TOP ====== -->
+    <a class="back-to-top" href="#inicio">▲</a>
+</body>
+
+</html>
