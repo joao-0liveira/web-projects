@@ -110,7 +110,7 @@ a {
     min-height: 100vh;
 }
 
-.menu-spacing {
+.spacing {
     height: 6.5rem;
 }
 
@@ -151,7 +151,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 0rem 0rem;
 }
 
 .menu img {
@@ -746,7 +746,6 @@ cite {
         flex-direction: column;
         gap: 2rem;
         height: auto;
-        padding-bottom: 0.8rem;
     }
 
     .navbar {
@@ -758,6 +757,10 @@ cite {
         flex-direction: column;
         text-align: center;
         gap: 2rem;
+    }
+
+    .menu-spacing {
+        height: 0rem;
     }
 
 }
