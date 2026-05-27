@@ -22,9 +22,10 @@ html, body {
     min-height: 100%;
     font-family: 'Inter', sans-serif;
     background: radial-gradient(circle at top left, rgba(255, 137, 6, 0.12), transparent 25%),
-                radial-gradient(circle at bottom right, rgba(242, 95, 76, 0.14), transparent 20%),
-                var(--bg);
+    radial-gradient(circle at bottom right, rgba(242, 95, 76, 0.14), transparent 20%),
+    var(--bg);
     color: var(--text);
+    scroll-behavior: smooth;
 }
 
 img {
@@ -270,6 +271,7 @@ section {
     padding: 1rem;
     background: linear-gradient(180deg, rgba(255,137,6,0.12), rgba(242,95,76,0.08));
     border-radius: var(--radius);
+    overflow: hidden;
 }
 
 .about-image::before {
@@ -281,6 +283,7 @@ section {
     filter: blur(14px);
     z-index: 0;
     animation: border-spin 18s linear infinite;
+    transform-origin: center;
 }
 
 .about-image img {
